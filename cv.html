@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: Times, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: rgb(232,10,8);
+            background: linear-gradient(90deg, rgba(232,10,8,1) 0%, rgba(125,128,6,1) 51%, rgba(23,241,5,1) 100%);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+       }
+        nav {
+            background: rgb(63,94,251);
+            background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Section Styling */
+        .section-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .profile-section img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid #0073e6;
+            object-fit: cover;
+        }
+
+        .profile-section h2 {
+            margin: 15px 0 10px;
+            color: #0073e6;
+            font-size: 1.8em;
+        }
+
+        .profile-section p {
+            font-size: 1.1em;
+            text-align: center;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* PDF Section */
+        .pdf-section h2 {
+            color: #0073e6;
+            margin-bottom: 10px;
+        }
+
+        .pdf-viewer iframe {
+            width: 450p;
+            height: 400px;
+            border: none;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            font-size: 16px;
+            line-height: 1.8;
+            color: white;
+            text-decoration: none;
+        }
+        .footer-section a:hover {
+            color: #007BFF;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-info i {
+            color: #007BFF;
+            font-size: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .company-logo img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        .live-view iframe {
+            border: none;
+            width: 100%;
+            height: 150px;
+        }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>My Profile</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="achievements.html">My Achievements</a>
+            <a href="projects.html">My Projects</a>
+            <a href="organizations.html">My Organizations</a>
+            <a href="book.html">Books</a>
+            <a href="cv.html">My CV</a>
+            <a href="Zero.html">Zero Olympiad</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact Info</a>
+    </nav>
+
+    <!-- Profile Section -->
+    <div class="section-container profile-section">
+        <img src="images/Jesan.png" alt="Profile Picture">
+        <h2>Md. Jesan Anjum Turzo</h2> <p>Founder || Speaker || Writer</p>
+    </header>
+
+    <div class="container">
+        <div class="section contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Date of Birth:</strong> December 5, 2007</p>
+            <p><strong>Phone:</strong> +880 176011020</p>
+            <p><strong>Email:</strong> <a href="mailto:mdjesananjum@gmail.com">mdjesananjum@gmail.com</a></p>
+            <p><strong>Address:</strong> Auchpara, Tongi, Gazipur - 1711</p>
+        </div>
+
+        <!-- Objective -->
+        <div class="section">
+            <h2>Objective</h2>
+            <p>
+                An enthusiastic and accomplished student with a passion for English learning, public speaking, and leadership. 
+                Founder of multiple platforms and clubs, including <strong>English Capsule</strong> and <strong>LCSSAC</strong>, 
+                I aim to make a global impact in education and language development, while consistently pushing for academic excellence and personal growth.
+            </p>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>BAF Shaheen College Kurmitola</strong> - Class 11</p>
+            <p>Achieved GPA 5 in SSC and PSC exams</p>
+            <p>Actively involved in leadership and language development projects</p>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="section">
+            <h2>Professional Experience</h2>
+            <ul>
+                <li><strong>Founder & President</strong> - English Capsule (July 2024 – Present)</li>
+                <li><strong>Founder & President</strong> - Language Club of Safiuddin Sarker Academy & College (LCSSAC) (October 2023 – Present)</li>
+                <li><strong>Founder</strong> - Al-Madina-tul Islam Academy</li>
+                <li><strong>Collaborator</strong> - Mujib Olympiad, English Olympiad, Steam Olympiad, Ninish, BioPark</li>
+            </ul>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <h2>Skills & Expertise</h2>
+            <div class="skills">
+                <div>Leadership & Team Management</div>
+                <div>Public Speaking</div>
+                <div>Event Planning</div>
+                <div>Academic Writing</div>
+                <div>Fluent in Bangla, English & Arabic</div>
+            </div>
+        </div>
+
+        <!-- Notable Achievements -->
+        <div class="section">
+            <h2>Notable Projects & Achievements</h2>
+            <ul>
+                <li><strong>1st Language Festival 2024</strong>: Lead organizer engaging 25,000+ participants</li>
+                <li><strong>English Capsule eBook Launch</strong>: Successful product launch and sales</li>
+                <li><strong>Mujib Olympiad Collaboration</strong>: Managed event partnership with LCSSAC and Ninish</li>
+                <li>Secured GPA 5 and won multiple academic awards throughout school life</li>
+            </ul>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Microsoft Office Suite (Word, Excel, PowerPoint)</li>
+                <li>Google Sheets & Google Forms</li>
+                <li>WhatsApp Web & Communication Platforms</li>
+            </ul>
+        </div>
+
+        <!-- Languages -->
+        <div class="section">
+            <h2>Languages</h2>
+            <ul>
+                <li><strong>Bangla:</strong> Native</li>
+                <li><strong>English:</strong> Proficient</li>
+                <li><strong>Arabic:</strong> Intermediate</li>
+            </ul>
+        </div>
+    </div>
+    </div class="section-container profile-section">
+
+    <!-- PDF Section -->
+    <div class="section-container pdf-section">
+        <h2>My Life Overview (PDF)</h2>
+        <div class="pdf-viewer">
+            <iframe src="images/mycv.pdf" title="Life PDF File"></iframe>
+        </div>
+        </div class="section-container pdf-section">
+
+    <footer>
+    <div class="footer-content">
+
+        <!-- Facebook Page Live View -->
+        <div class="footer-section live-view">
+            <h3>Facebook Page</h3>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/mdjesan11/&tabs=timeline&width=500&height=150&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true"></iframe>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-section">
+            <h3>Contact Address</h3>
+            <div class="contact-info">
+                <i class="fa fa-map-marker"></i>
+                <p> Address:# Boro Dewra Road, Cherag Ali, Tongi, Gazipur - 1711, Bangladesh</p>
+            </div>
+            <div class="contact-info">
+                <i class="fa fa-phone"></i>
+                <p>+880 176011020, +880 1940410166</p>
+            </div>
+            <div class="contact-info">
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:hello.ec.bd@gmail.com">mdjesananjum@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/mdjesan11/"><img src="images/facebook.jpeg" alt="Facebook"></a>
+                <a href="https://youtube.com/@al-madina-tulislam8417?feature=shared"><img src="images/Youtube.png" alt="YouTube"></a>
+                <a href="https://x.com/jesananjum96156"><img src="images/x.png" alt="X"></a>
+                <a href="https://www.instagram.com/muhammadjesanturzo/"><img src="images/Instagram.jpeg" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/muhammad-jesan-anjum-bbb896279/"><img src="images/Linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+        <!-- Company Logo -->
+        <div class="footer-section company-logo">
+            <h3>Md. Jeans Anjum Turzo</h3>
+            <img src="images/Jesan.png" alt="Company Logo">
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Md. Jesan Anjum Turzo. All rights reserved.</p>
+    </div>
+    </footer>
+</body>
+</html>

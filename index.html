@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Jesan Anjum Turzo - Home</title>
+    <style>
+        body {
+            font-family: Times, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: rgb(232,10,8);
+            background: linear-gradient(90deg, rgba(232,10,8,1) 0%, rgba(125,128,6,1) 51%, rgba(23,241,5,1) 100%);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+       }
+        nav {
+            background: rgb(63,94,251);
+            background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 430px;
+            overflow: hidden;
+        }
+
+        .hero .image-slider {
+            position: absolute;
+            width: 200%;
+            height: 100%;
+            display: flex;
+            animation: slide 16s infinite;
+        }
+
+        .hero .image-slider img {
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(-50%); }
+        }
+
+        .hero .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 8px black;
+        }
+
+        .hero .text h2 {
+            font-size: 36px;
+        }
+
+        .hero .text a {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .hero .text a:hover {
+            background-color: #0056b3;
+        }
+        .update-line {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background-color: #fff; /* White background */
+            border-top: 2px solid #007BFF;
+            border-bottom: 2px solid #007BFF;
+            position: relative;
+            height: 50px; /* Height of the scrolling line */
+        }
+
+        /* Blue Update Box */
+        .update-box {
+            background-color: #007BFF; /* Blue box */
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            border-radius: 0 5px 5px 0;
+            z-index: 1;
+        }
+
+        /* Scrolling Text */
+        .scrolling-text {
+            display: inline-block;
+            white-space: nowrap;
+            color: #FF0000; /* Red color for the scrolling text */
+            font-size: 16px;
+            font-weight: bold;
+            animation: scrollText 20s linear infinite; /* Scrolling animation */
+            padding-left: 20px;
+            z-index: 0;
+        }
+
+        /* Scrolling Animation */
+        @keyframes scrollText {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        .profile-pic {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: justufy;
+        }
+        .section h2 {
+            text-align: center;
+        }
+        .about, .events, .contact {
+            background-color: white;
+            margin: 30px 0;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .about p, .events p, .contact p {
+            font-size: 18px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            font-size: 16px;
+            line-height: 1.8;
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: #007BFF;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-info i {
+            color: #007BFF;
+            font-size: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .company-logo img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        .live-view iframe {
+            border: none;
+            width: 100%;
+            height: 150px;
+        }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            align-items: center;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Website</h1>
+</header>
+    <nav>
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="achievements.html">My Achievements</a>
+            <a href="projects.html">My Projects</a>
+            <a href="organizations.html">My Organizations</a>
+            <a href="book.html">Books</a>
+            <a href="cv.html">My CV</a>
+            <a href="Zero.html">Zero Olympiad</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact Info</a>
+        </ul>
+    </nav>
+<section class="hero">
+    <div class="image-slider">
+        <img src="images/Jesan FB Cover.png" alt="Hero Image 1">
+        <img src="images/ecb.jpg" alt="Hero Image 1">
+    </div>
+    <div class="text">
+        <h2>Md. Jesan Anjum Turzo</h2>
+        <h1>Founder || Speaker || Writer</h1>
+        <a href="#about">Learn More</a>
+    </div>
+</section>
+<secrion>
+    <!-- Update Scrolling Line -->
+    <div class="update-line">
+        <!-- Blue Update Box -->
+        <div class="update-box">Update</div>
+        <!-- Scrolling Text -->
+        <div class="scrolling-text">
+            <h2><b>Register now for Zero Olympiad to unlock global opportunities! | Take part in workshops, seminars, and case study competitions! | Apply for SDG Fellowship opportunities worldwide!</b></h2>
+        </div>
+    </div>
+</section>
+<img src="images/Jesan.png" alt="Profile Picture of Md. Jesan Anjum Turzo" class="profile-pic">
+<section id="about" class="section about">
+    <h2>Introduction</h2>
+    <h1>Assalamualaikum!</h1>
+        <p>
+            I’m <strong>Md. Jesan Anjum Turzo</strong>, a founder, speaker, and author. As the founder of 
+            the <strong>Language Club of Safiuddin Sarker Academy & College (LCSSAC)</strong>,<strong>AMI Academy[Al-Madina-tul Islam Academy]</strong> and the platform <strong>English Capsule</strong>, 
+            I aim to empower students with essential English skills and relious thoughts.
+        </p>
+        <p>
+            I have spoken on <strong>over 10 prestigious stages</strong>, achieved a <strong>GPA of 5</strong> in both <strong>PSC</strong> and 
+            <strong>SSC</strong>, and collaborated with renowned organizations such as <strong>Mujib Olympiad</strong>, 
+            <strong>Ninish</strong>, <strong>BioPark</strong>, <strong>English Olympiad</strong>, and <strong>English Carnival Bangladesh</strong>.
+        </p>
+        <p>
+            Currently, I’m an <strong>11th-grade student</strong> at <strong>BAF Shaheen College Kurmitola</strong>. My passions include learning, 
+            teaching, writing, and public speaking. I strive to inspire students to become confident speakers, capable leaders, 
+            and future influencers.
+        </p>
+    <a href="#events" class="btn">Message</a>
+</section>
+
+<section id="events" class="section events">
+    <h2>Messages</h2>
+       <!-- Bismillah in Arabic -->
+    <h2 style="text-align: center; font-family: Arial, sans-serif;">
+        بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ
+    </h2>
+
+    <!-- Surah Adh-Dhariyat Ayah 56 -->
+    <section style="margin: 20px;">
+        <h3 style="color: darkgreen;">Surah Adh-Dhariyat, Ayah 56:</h3>
+        <blockquote style="font-style: italic; color: navy;">
+            <p><strong>"And I did not create the jinn and mankind except to worship Me."</strong></p>
+            <p><strong>Translation:</strong> "I have only created jinns and men, that they may worship Me." (51:56)</p>
+        </blockquote>
+    </section>
+
+    <!-- Message of Allah's Creation -->
+    <section style="margin: 20px;">
+        <p>
+            All praise is due to Allah, the Almighty, Who created us. The purpose of our creation is to worship Him, 
+            yet today we remain heedless. Allah has sent us to this world, and to Him, we will ultimately return. To 
+            truly understand Islam, we must seek knowledge.
+        </p>
+        <p>
+            However, only general knowledge or worldly knowledge is not enough to understand Islam. We need Islamic 
+            knowledge. I have never studied in a Madrasa, but since understanding Islam in class 7, I resolved to pursue 
+            Islamic knowledge alongside my academic education. I encourage you all to strive for at least the minimum 
+            Islamic knowledge, even if you cannot become an Alim.
+        </p>
+    </section>
+
+    <!-- Imam Shafeyi's Quote -->
+    <section style="margin: 20px;">
+        <h3>Imam Shafeyi's Quote:</h3>
+        <blockquote style="font-style: italic; color: teal;">
+            <p>"Knowledge is that which benefits, not that which is memorized."</p>
+            <p>
+                <strong>Meaning:</strong> Knowledge that does not serve a practical purpose or cannot be applied 
+                is worthless. Therefore, we must gain skills alongside acquiring knowledge and put that knowledge 
+                into practice.
+            </p>
+        </blockquote>
+    </section>
+
+    <!-- Youth Unemployment in Bangladesh -->
+    <section style="margin: 20px;">
+        <h3 style="color: darkred;">Youth Unemployment and Bangladesh's Future:</h3>
+        <p>
+            Today, millions of youths in Bangladesh are unemployed. One major reason is the lack of job opportunities 
+            and our inability to apply knowledge practically. As a result, instead of becoming entrepreneurs, we are 
+            merely job seekers. My dream is to create <strong>10 million new job opportunities</strong> in Bangladesh.
+        </p>
+    </section>
+
+    <!-- Einstein's Quote -->
+    <section style="margin: 20px;">
+        <h3>Albert Einstein's Quote:</h3>
+        <blockquote style="font-style: italic; color: purple;">
+            <p>"Education is not the learning of facts, but the training of the mind to think."</p>
+        </blockquote>
+    </section>
+
+    <!-- Conclusion -->
+    <section style="margin: 20px; text-align: center;">
+        <h2 style="color: darkblue;">Let's Build Bangladesh 2.0!</h2>
+        <h2 style="color: darkgreen;">Let's Spread the Peace of Islam!</h2>
+        <h2 style="color: maroon;">Move On!!</h2>
+    </section>
+<section id="contact" class="section contact">
+<a href="#contact" class="btn">Bangla</a>
+</section>
+    <!-- বিসমিল্লাহ -->
+    <h2 style="text-align: center; font-family: Arial, sans-serif;">
+        بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ
+    </h2>
+
+    <!-- সূরা আজ-জারিয়াত আয়াত ৫৬ -->
+    <section style="margin: 20px;">
+        <h3 style="color: darkgreen;">সূরা আজ-জারিয়াত, আয়াত ৫৬:</h3>
+        <blockquote style="font-style: italic; color: navy;">
+            <p><strong>"وَمَا خَلَقْتُ الْجِنَّ وَالْإِنسَ إِلَّا لِيَعْبُدُونِ"</strong></p>
+            <p>অনুবাদ: "আর আমি জিন ও মানুষকে সৃষ্টি করেছি কেবল আমার ইবাদতের জন্য।" (৫১:৫৬)</p>
+        </blockquote>
+    </section>
+
+    <!-- আল্লাহর প্রশংসা -->
+    <section style="margin: 20px;">
+        <p>
+            সকল প্রশংসা মহান আল্লাহর যিনি আমাদের সৃষ্টি করেছেন। মহান আল্লাহ মূলত আমাদেরকে সৃষ্টি করেছেন তাঁর 
+            ইবাদত করার জন্য। কিন্তু আজ আমরা উদাসীন। তিনি আমাদের এই পৃথিবীতে পাঠিয়েছেন এবং তাঁর কাছেই আমাদের 
+            ফিরে যেতে হবে। আর ইসলাম সম্পর্কে জানার জন্য আমাদের প্রয়োজন জ্ঞান।
+        </p>
+        <p>
+            তবে শুধু সাধারণ জ্ঞান বা পৃথিবীর জ্ঞান দিয়ে ইসলামকে জানা সম্ভব নয়। এর জন্য দরকার ইসলামী জ্ঞান। আমি 
+            কখনো মাদ্রাসায় পড়িনি, কিন্তু যখন ক্লাস ৭ থেকে ইসলামকে বুঝতে পেরেছি তখন থেকেই আমি নিয়ত করেছি আমার 
+            একাডেমিক পড়াশোনার পাশাপাশি আমি ইসলামী জ্ঞান অর্জন করব। আমি আপনাদেরও বলব, আলিম না হলেও ইসলামিক 
+            যে ন্যূনতম জ্ঞান থাকা দরকার তা অর্জন করুন।
+        </p>
+    </section>
+
+    <!-- ইমাম শাফেয়ীর বাণী -->
+    <section style="margin: 20px;">
+        <h3>ইমাম শাফেয়ীর উক্তি:</h3>
+        <blockquote style="font-style: italic; color: teal;">
+            <p>"Knowledge is that which benefits, not that which is memorized."</p>
+            <p>
+                <strong>অর্থ:</strong> যে জ্ঞান আমাদের কাজে আসে না, অর্থাৎ যেটাকে আমরা বাস্তবে প্রয়োগ করতে পারি না, 
+                সেই জ্ঞান মূল্যহীন। তাই আমাদের জ্ঞান অর্জনের পাশাপাশি দক্ষতা অর্জন করতে হবে এবং সেই জ্ঞানকে 
+                বাস্তবে কাজে লাগাতে হবে।
+            </p>
+        </blockquote>
+    </section>
+
+    <!-- যুব বেকারত্ব ও বাংলাদেশের উন্নতি -->
+    <section style="margin: 20px;">
+        <h3 style="color: darkred;">যুব বেকারত্ব ও বাংলাদেশের উন্নতি:</h3>
+        <p>
+            আজ আমাদের বাংলাদেশে লক্ষ লক্ষ যুবক বেকার। এর একটি বড় কারণ কর্মসংস্থানের অভাব। আর আমরা আজ 
+            জ্ঞানকে বাস্তবে ব্যবহার করতে পারছি না বলে উদ্যোক্তা না হয়ে আমরা চাকরি খুঁজছি। তাই আমি বাংলাদেশে 
+            <strong>নতুন ১০ মিলিয়ন কর্মসংস্থানের সুযোগ</strong> তৈরি করতে চাই।
+        </p>
+    </section>
+
+    <!-- আইনস্টাইনের উক্তি -->
+    <section style="margin: 20px;">
+        <h3>আইনস্টাইনের উক্তি:</h3>
+        <blockquote style="font-style: italic; color: purple;">
+            <p>"Education is not the learning of facts, but the training of the mind to think."</p>
+        </blockquote>
+    </section>
+
+    <!-- উপসংহার -->
+    <section style="margin: 20px;">
+        <h2 style="text-align: center; color: darkblue;">বাংলাদেশ ২.০ গড়ি!</h2>
+        <h2 style="text-align: center; color: darkgreen;">ইসলামের শান্তি ছড়িয়ে দিই!</h2>
+        <h2 style="text-align: center; color: maroon;">অগ্রসর হই!!</h2>
+    </section>
+    <a href="mailto:hello.ec.bd@gmail.com" class="btn">Email Us</a>
+</section>
+
+    <footer>
+    <div class="footer-content">
+
+        <!-- Facebook Page Live View -->
+        <div class="footer-section live-view">
+            <h3>Facebook Page</h3>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/mdjesan11/&tabs=timeline&width=500&height=150&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true"></iframe>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-section">
+            <h3>Contact Address</h3>
+            <div class="contact-info">
+                <i class="fa fa-map-marker"></i>
+                <p> Address:# Boro Dewra Road, Cherag Ali, Tongi, Gazipur - 1711, Bangladesh</p>
+            </div>
+            <div class="contact-info">
+                <i class="fa fa-phone"></i>
+                <p>+880 176011020, +880 1940410166</p>
+            </div>
+            <div class="contact-info">
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:hello.ec.bd@gmail.com">mdjesananjum@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/mdjesan11/"><img src="images/facebook.jpeg" alt="Facebook"></a>
+                <a href="https://youtube.com/@al-madina-tulislam8417?feature=shared"><img src="images/Youtube.png" alt="YouTube"></a>
+                <a href="https://x.com/jesananjum96156"><img src="images/x.png" alt="X"></a>
+                <a href="https://www.instagram.com/muhammadjesanturzo/"><img src="images/Instagram.jpeg" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/muhammad-jesan-anjum-bbb896279/"><img src="images/Linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+        <!-- Company Logo -->
+        <div class="footer-section company-logo">
+            <h3>Md. Jeans Anjum Turzo</h3>
+            <img src="images/Jesan.png" alt="Company Logo">
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Md. Jesan Anjum Turzo. All rights reserved.</p>
+    </div>
+    </footer>
+
+</body>
+</html>
+
+

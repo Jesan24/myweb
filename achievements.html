@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Achievements</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Times, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: rgb(232,10,8);
+            background: linear-gradient(90deg, rgba(232,10,8,1) 0%, rgba(125,128,6,1) 51%, rgba(23,241,5,1) 100%);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+       }
+        nav {
+            background: rgb(63,94,251);
+            background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        main {
+            margin: 20px;
+        }
+
+        /* Text Section Container */
+        .text-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .text-container h2 {
+            color: #0073e6;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .text-container p {
+            text-align: justify;
+            font-size: 1.1em;
+            color: #333333;
+        }
+
+        /* Gallery Section Container */
+        .gallery-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .gallery-container h2 {
+            color: #0073e6;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            background-color: #f4f4f4;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-item .caption {
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+            padding: 5px 0;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ddd;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>My Achievements</h1>
+</header>
+    <nav>
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="achievements.html">My Achievements</a>
+            <a href="projects.html">My Projects</a>
+            <a href="organizations.html">My Organizations</a>
+            <a href="book.html">Books</a>
+            <a href="cv.html">My CV</a>
+            <a href="Zero.html">Zero Olympiad</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact Info</a>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Text Section -->
+        <section class="text-container">
+            <h2>My Journey of Achievements</h2>
+
+        <!-- Public Speaking & Leadership -->
+        <section class="achievement-section">
+            <h2>Public Speaking & Leadership</h2>
+            <ul>
+                <li>Spoken on over <strong>10 stages</strong>, showcasing my passion and skills in public speaking.</li>
+                <li>Won numerous <strong>academic awards</strong>, demonstrating my dedication and excellence in education.</li>
+                <li>Recognized for my <strong>leadership abilities</strong> through active roles in various organizations and clubs.</li>
+            </ul>
+        </section>
+
+        <!-- Founder & Leader -->
+        <section class="achievement-section">
+            <h2>Founder & Leader</h2>
+            <ul>
+                <li>Founder of <strong>LCSSAC</strong> (Language Club of Safiuddin Sarker Academy & College), established in <strong>2023</strong> with the goal of empowering students through language learning and leadership development.</li>
+                <li>Creator of <strong>English Capsule</strong>, an English learning initiative, where I launched my first product, an eBook titled '<strong>English Capsule</strong>.' This platform aims to make English learning accessible globally and reach a wider audience over the next <strong>8 years</strong>.</li>
+            </ul>
+        </section>
+
+        <!-- Collaborations & Contributions -->
+        <section class="achievement-section">
+            <h2>Collaborations & Contributions</h2>
+            <ul>
+                <li>Collaborated with renowned organizations, including <strong>Mujib Olympiad</strong>, <strong>Steam Olympiad</strong>, <strong>Ninish</strong>, and <strong>BioPark</strong>, to promote education and create valuable learning opportunities for students.</li>
+                <li>Worked closely with <strong>national media</strong> and successfully secured sponsorships for various events, including the <strong>1st Language Festival</strong>, significantly contributing to its success.</li>
+            </ul>
+        </section>
+
+        <!-- Additional Contributions -->
+        <section class="achievement-section">
+            <h2>Additional Contributions</h2>
+            <ul>
+                <li><strong>Mentorship & Public Speaking:</strong> Regularly mentor students in language and public speaking, encouraging them to achieve academic and personal growth.</li>
+                <li><strong>Event Organizer:</strong> Led the organization of major educational events, workshops, and festivals, positively impacting thousands of students.</li>
+                <li><strong>Academic Excellence:</strong> Achieved <strong>GPA 5</strong> in both my SSC and PSC exams, a testament to my commitment to education and personal growth.</li>
+                <li><strong>Versatility:</strong> Adapted to multiple educational settings, having studied in <strong>five different schools</strong> due to my father’s transfers, gaining unique perspectives from each experience.</li>
+            </ul>
+        </section>
+        </section class="text-container">
+
+        <!-- Gallery Section -->
+        <section class="gallery-container">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <!-- Gallery Items 1 to 48 -->
+                <div class="gallery-item">
+                    <img src="images/g1.jpg" alt="Image 1">
+                    <div class="caption">Caption for Image 1</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g2.jpg" alt="Image 2">
+                    <div class="caption">Caption for Image 2</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g3.jpg" alt="Image 3">
+                    <div class="caption">Caption for Image 3</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g4.jpg" alt="Image 4">
+                    <div class="caption">Caption for Image 4</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g5.jpg" alt="Image 5">
+                    <div class="caption">Caption for Image 5</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g6.jpg" alt="Image 6">
+                    <div class="caption">Caption for Image 6</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g7.jpg" alt="Image 7">
+                    <div class="caption">Caption for Image 7</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g8.jpg" alt="Image 8">
+                    <div class="caption">Caption for Image 8</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g9.jpg" alt="Image 9">
+                    <div class="caption">Caption for Image 9</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g10.jpg" alt="Image 10">
+                    <div class="caption">Caption for Image 10</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g11.jpg" alt="Image 11">
+                    <div class="caption">Caption for Image 11</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g12.jpg" alt="Image 12">
+                    <div class="caption">Caption for Image 12</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g13.jpg" alt="Image 13">
+                    <div class="caption">Caption for Image 13</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g14.jpg" alt="Image 14">
+                    <div class="caption">Caption for Image 14</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g15.jpg" alt="Image 15">
+                    <div class="caption">Caption for Image 15</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g16.jpg" alt="Image 16">
+                    <div class="caption">Caption for Image 16</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g17.jpg" alt="Image 17">
+                    <div class="caption">Caption for Image 17</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g18.jpg" alt="Image 18">
+                    <div class="caption">Caption for Image 18</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g19.jpg" alt="Image 19">
+                    <div class="caption">Caption for Image 19</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g20.jpg" alt="Image 20">
+                    <div class="caption">Caption for Image 20</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g21.jpg" alt="Image 21">
+                    <div class="caption">Caption for Image 21</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g22.jpg" alt="Image 22">
+                    <div class="caption">Caption for Image 22</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g23.jpg" alt="Image 23">
+                    <div class="caption">Caption for Image 23</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g24.jpg" alt="Image 24">
+                    <div class="caption">Caption for Image 24</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g25.jpg" alt="Image 25">
+                    <div class="caption">Caption for Image 25</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g26.jpg" alt="Image 26">
+                    <div class="caption">Caption for Image 26</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g27.jpg" alt="Image 27">
+                    <div class="caption">Caption for Image 27</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g28.jpg" alt="Image 28">
+                    <div class="caption">Caption for Image 28</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g29.jpg" alt="Image 29">
+                    <div class="caption">Caption for Image 29</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g30.jpg" alt="Image 30">
+                    <div class="caption">Caption for Image 30</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g31.jpg" alt="Image 31">
+                    <div class="caption">Caption for Image 31</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g32.jpg" alt="Image 32">
+                    <div class="caption">Caption for Image 32</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g33.jpg" alt="Image 33">
+                    <div class="caption">Caption for Image 33</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g34.jpg" alt="Image 34">
+                    <div class="caption">Caption for Image 34</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g35.jpg" alt="Image 35">
+                    <div class="caption">Caption for Image 35</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g36.jpg" alt="Image 36">
+                    <div class="caption">Caption for Image 36</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g37.jpg" alt="Image 37">
+                    <div class="caption">Caption for Image 37</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g38.jpg" alt="Image 38">
+                    <div class="caption">Caption for Image 38</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g39.jpg" alt="Image 39">
+                    <div class="caption">Caption for Image 39</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g40.jpg" alt="Image 40">
+                    <div class="caption">Caption for Image 40</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g41.jpg" alt="Image 41">
+                    <div class="caption">Caption for Image 41</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g42.jpg" alt="Image 42">
+                    <div class="caption">Caption for Image 42</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g43.jpg" alt="Image 43">
+                    <div class="caption">Caption for Image 43</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g44.jpg" alt="Image 44">
+                    <div class="caption">Caption for Image 44</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g45.jpg" alt="Image 45">
+                    <div class="caption">Caption for Image 45</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g46.jpg" alt="Image 46">
+                    <div class="caption">Caption for Image </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g47.jpg" alt="Image 46">
+                    <div class="caption">Caption for Image </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/g48.jpg" alt="Image 46">
+                    <div class="caption">Caption for Image </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+        <footer>
+    <div class="footer-content">
+
+        <!-- Facebook Page Live View -->
+        <div class="footer-section live-view">
+            <h3>Facebook Page</h3>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/mdjesan11/&tabs=timeline&width=500&height=150&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true"></iframe>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-section">
+            <h3>Contact Address</h3>
+            <div class="contact-info">
+                <i class="fa fa-map-marker"></i>
+                <p> Address:# Boro Dewra Road, Cherag Ali, Tongi, Gazipur - 1711, Bangladesh</p>
+            </div>
+            <div class="contact-info">
+                <i class="fa fa-phone"></i>
+                <p>+880 176011020, +880 1940410166</p>
+            </div>
+            <div class="contact-info">
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:hello.ec.bd@gmail.com">mdjesananjum@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/mdjesan11/"><img src="images/facebook.jpeg" alt="Facebook"></a>
+                <a href="https://youtube.com/@al-madina-tulislam8417?feature=shared"><img src="images/Youtube.png" alt="YouTube"></a>
+                <a href="https://x.com/jesananjum96156"><img src="images/x.png" alt="X"></a>
+                <a href="https://www.instagram.com/muhammadjesanturzo/"><img src="images/Instagram.jpeg" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/muhammad-jesan-anjum-bbb896279/"><img src="images/Linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+        <!-- Company Logo -->
+        <div class="footer-section company-logo">
+            <h3>Md. Jeans Anjum Turzo</h3>
+            <img src="images/Jesan.png" alt="Company Logo">
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Md. Jesan Anjum Turzo. All rights reserved.</p>
+    </div>
+    </footer>
+</body>
+</html>

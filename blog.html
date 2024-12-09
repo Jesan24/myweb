@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog - Journal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Times, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: linear-gradient(90deg, rgba(232, 10, 8, 1) 0%, rgba(125, 128, 6, 1) 51%, rgba(23, 241, 5, 1) 100%);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .blog-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+
+        .blog-post img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .blog-post h2 {
+            color: #007BFF;
+        }
+
+        .blog-post p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Like/Comment Section */
+        .interactions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .like-btn, .comment-btn {
+            cursor: pointer;
+            color: #007BFF;
+            border: none;
+            background: none;
+            font-size: 16px;
+        }
+
+        .like-btn:hover, .comment-btn:hover {
+            text-decoration: underline;
+        }
+
+        .like-count, .comment-count {
+            font-size: 14px;
+            color: #666;
+            margin-left: 5px;
+        }
+
+        /* Comment Section */
+        .comments {
+            margin-top: 15px;
+        }
+
+        .comments input {
+            width: 90%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .comments button {
+            padding: 8px 12px;
+            margin-left: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .comments ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .comments li {
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #444;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            font-size: 16px;
+            line-height: 1.8;
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: #007BFF;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-info i {
+            color: #007BFF;
+            font-size: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .company-logo img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        .live-view iframe {
+            border: none;
+            width: 100%;
+            height: 150px;
+        }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Blog Journal</h1>
+    </header>
+    <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="achievements.html">My Achievements</a>
+            <a href="projects.html">My Projects</a>
+            <a href="organizations.html">My Organizations</a>
+            <a href="book.html">Books</a>
+            <a href="cv.html">My CV</a>
+            <a href="Zero.html">Zero Olympiad</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact Info</a>
+    </nav>
+
+    <!-- Blog Container -->
+    <div class="blog-container">
+        <!-- Blog Post 1 -->
+        <div class="blog-post">
+            <img src="images/zero.png" alt="Blog Post Image">
+            <h1>Zero Olympiad: The Beginning of a New Horizon</h1>
+        <p>In a world faced with pressing challenges—<strong>climate change, poverty, inequality, and hunger</strong>—young minds hold the key to finding innovative and sustainable solutions. The <strong>Zero Olympiad</strong> is not just another competition; it’s a call to action. Led by <strong>Faatiha Aayat</strong>, the Olympiad serves as a <em>global platform</em> for the youth to tackle real-world problems and actively contribute to achieving the <strong>United Nations Sustainable Development Goals (SDGs)</strong>.</p>
+    </section>
+
+    <!-- What is the Zero Olympiad? -->
+    <section>
+        <h2>What is the Zero Olympiad?</h2>
+        <p>The <strong>Zero Olympiad</strong> is a groundbreaking initiative designed to inspire and engage young people worldwide to address global issues. At its core, the Olympiad aims to:</p>
+        <ul>
+            <li>Motivate the youth to think critically.</li>
+            <li>Develop leadership skills.</li>
+            <li>Present solutions that contribute to achieving the <strong>17 Sustainable Development Goals (SDGs)</strong> set by the United Nations.</li>
+        </ul>
+        <p>The name <em>"Zero Olympiad"</em> reflects the vision of achieving:</p>
+        <ul>
+            <li>Zero Poverty</li>
+            <li>Zero Hunger</li>
+            <li>Zero Carbon Emissions</li>
+            <li>Zero Inequality</li>
+            <li>Zero Pollution</li>
+        </ul>
+        <p>Through <strong>teamwork, creativity, and problem-solving</strong>, young minds showcase their potential to build a better future.</p>
+    </section>
+
+    <!-- Why Do We Need the Zero Olympiad? -->
+    <section>
+        <h2>Why Do We Need the Zero Olympiad?</h2>
+        <p>The world today faces complex and interconnected challenges. Issues like <strong>poverty, hunger, and climate change</strong> demand immediate attention. Traditional education often focuses on academic learning but does not always equip students with the necessary skills to solve real-world problems.</p>
+        <p>The <strong>Zero Olympiad</strong> bridges this gap by providing a platform where young people can:</p>
+        <ul>
+            <li><strong>Think critically</strong> and devise solutions to global challenges.</li>
+            <li><strong>Develop leadership skills</strong> to lead initiatives and drive change.</li>
+            <li><strong>Foster social responsibility</strong> and a desire to contribute to their communities.</li>
+            <li><strong>Collaborate with peers</strong> to enhance teamwork and communication skills.</li>
+        </ul>
+    </section>
+
+    <!-- Promoting the United Nations SDGs -->
+    <section>
+        <h2>Promoting the United Nations SDGs</h2>
+        <p>The <strong>Zero Olympiad</strong> aligns its goals with the <strong>17 Sustainable Development Goals (SDGs)</strong> introduced by the United Nations. Let’s take a look at a few key SDGs and their significance:</p>
+        <ul>
+            <li>
+                <h3>1. Zero Poverty (SDG 1)</h3>
+                <p>End poverty in all its forms worldwide. Millions of people still live in extreme poverty. The Zero Olympiad encourages participants to create <strong>equal opportunities</strong> for everyone.</p>
+            </li>
+            <li>
+                <h3>2. Zero Hunger (SDG 2)</h3>
+                <p>Ensure food security, improve nutrition, and promote sustainable agriculture. Hunger affects over <strong>800 million people</strong> globally. Participants develop sustainable solutions to combat food scarcity.</p>
+            </li>
+            <li>
+                <h3>3. Climate Action (SDG 13)</h3>
+                <p>Take urgent action to combat climate change. The Zero Olympiad empowers youth to reduce <strong>carbon emissions</strong> and adopt <em>eco-friendly practices</em>.</p>
+            </li>
+            <li>
+                <h3>4. Quality Education (SDG 4)</h3>
+                <p>Ensure inclusive and equitable quality education for all. The Olympiad itself promotes <em>learning through action</em>, helping participants grow beyond textbooks.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- How Does the Zero Olympiad Work? -->
+    <section>
+        <h2>How Does the Zero Olympiad Work?</h2>
+        <p>The competition invites participants from around the world to form teams, identify specific issues, and propose innovative solutions. Here’s a step-by-step breakdown:</p>
+        <ol>
+            <li><strong>Team Formation:</strong> Participants collaborate with peers to form teams.</li>
+            <li><strong>Problem Identification:</strong> Each team selects a challenge aligned with the SDGs.</li>
+            <li><strong>Solution Development:</strong> Through research and teamwork, participants design a solution.</li>
+            <li><strong>Presentation:</strong> Teams present their ideas in front of judges, mentors, and peers.</li>
+        </ol>
+    </section>
+
+    <!-- Impact of Zero Olympiad -->
+    <section>
+        <h2>The Impact of Zero Olympiad</h2>
+        <p>The <strong>Zero Olympiad</strong> is about empowering youth to think like <em>leaders</em> and <em>innovators</em>. It fosters:</p>
+        <ul>
+            <li><strong>Leadership Development:</strong> Participants learn to lead projects.</li>
+            <li><strong>Global Awareness:</strong> Youth become aware of global issues and their role in solving them.</li>
+            <li><strong>Skill Development:</strong> Research, critical thinking, and communication skills are nurtured.</li>
+            <li><strong>Community Impact:</strong> Solutions aim to create tangible change in communities.</li>
+        </ul>
+    </section>
+
+    <!-- Get Involved -->
+    <section>
+        <h2>How to Get Involved?</h2>
+        <p>Are you ready to be part of a global movement to shape a better future? Whether you’re a student, educator, or leader, the <strong>Zero Olympiad</strong> invites you to contribute to creating a world of <strong>zero poverty, zero hunger, and zero inequality</strong>.</p>
+        <p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeA_JZL7Hnycmg2qTcbvjwG2O4sp7pNV22rJUneTYKq7tlxZA/viewform" style="color: blue; font-weight: bold;">Register Now</a> or 
+            <a href="https://faatihaaayat.com/zeroolympiad/" style="color: green; font-weight: bold;">Learn More</a>.
+        </p>
+    </section>
+
+    <!-- Conclusion -->
+    <section>
+        <h2>Conclusion</h2>
+        <p>The <strong>Zero Olympiad</strong> is more than a competition—it’s a revolution to inspire the next generation to create solutions for the world’s biggest challenges. Together, we can achieve <strong>zero poverty</strong>, <strong>zero hunger</strong>, and <strong>zero emissions</strong>.</p>
+        <p><em>Are you ready to change the world?</em></p>
+        <p>
+            📢 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeA_JZL7Hnycmg2qTcbvjwG2O4sp7pNV22rJUneTYKq7tlxZA/viewform" style="font-size: 1.2em; color: red; font-weight: bold;">Register Today</a> and Be the Change You Wish to See! 🚀
+        </p>
+    </section>
+            
+            <!-- Interactions -->
+            <div class="interactions">
+                <button class="like-btn" onclick="likePost(1)">👍 Like<span class="like-count" id="like-count-1">0</span></button>
+                <button class="comment-btn" onclick="toggleComments(1)">💬 Comment</button>
+            </div>
+
+            <!-- Comments -->
+            <div class="comments" id="comments-1" style="display: none;">
+                <input type="text" placeholder="Add a comment..." id="comment-input-1">
+                <button onclick="addComment(1)">Post</button>
+                <ul id="comment-list-1"></ul>
+            </div>
+        </div>
+
+        <!-- Add more blog posts below -->
+    </div>
+
+    <!-- Footer -->    <footer>
+    <div class="footer-content">
+
+        <!-- Facebook Page Live View -->
+        <div class="footer-section live-view">
+            <h3>Facebook Page</h3>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/mdjesan11/&tabs=timeline&width=500&height=150&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true"></iframe>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-section">
+            <h3>Contact Address</h3>
+            <div class="contact-info">
+                <i class="fa fa-map-marker"></i>
+                <p> Address:# Boro Dewra Road, Cherag Ali, Tongi, Gazipur - 1711, Bangladesh</p>
+            </div>
+            <div class="contact-info">
+                <i class="fa fa-phone"></i>
+                <p>+880 176011020, +880 1940410166</p>
+            </div>
+            <div class="contact-info">
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:hello.ec.bd@gmail.com">mdjesananjum@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/mdjesan11/"><img src="images/facebook.jpeg" alt="Facebook"></a>
+                <a href="https://youtube.com/@al-madina-tulislam8417?feature=shared"><img src="images/Youtube.png" alt="YouTube"></a>
+                <a href="https://x.com/jesananjum96156"><img src="images/x.png" alt="X"></a>
+                <a href="https://www.instagram.com/muhammadjesanturzo/"><img src="images/Instagram.jpeg" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/muhammad-jesan-anjum-bbb896279/"><img src="images/Linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+        <!-- Company Logo -->
+        <div class="footer-section company-logo">
+            <h3>Md. Jeans Anjum Turzo</h3>
+            <img src="images/Jesan.png" alt="Company Logo">
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Md. Jesan Anjum Turzo. All rights reserved.</p>
+    </div>
+    </footer>
+
+    <script>
+        // Like Feature
+        let likeCounts = {};
+
+        function likePost(postId) {
+            if (!likeCounts[postId]) likeCounts[postId] = 0;
+            likeCounts[postId]++;
+            document.getElementById(`like-count-${postId}`).innerText = likeCounts[postId];
+        }
+
+        // Comment Feature
+        function toggleComments(postId) {
+            const commentSection = document.getElementById(`comments-${postId}`);
+            commentSection.style.display = commentSection.style.display === "none" ? "block" : "none";
+        }
+
+        function addComment(postId) {
+            const inputField = document.getElementById(`comment-input-${postId}`);
+            const commentList = document.getElementById(`comment-list-${postId}`);
+            const comment = inputField.value.trim();
+
+            if (comment) {
+                const listItem = document.createElement('li');
+                listItem.textContent = comment;
+                commentList.appendChild(listItem);
+                inputField.value = '';
+            }
+        }
+    </script>
+</body>
+</html>

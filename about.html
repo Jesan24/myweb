@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        body {
+            font-family: Times, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: rgb(232,10,8);
+            background: linear-gradient(90deg, rgba(232,10,8,1) 0%, rgba(125,128,6,1) 51%, rgba(23,241,5,1) 100%);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+       }
+        nav {
+            background: rgb(63,94,251);
+            background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Section Container Styling */
+        .section-container {
+            padding: 20px;
+            margin: 20px auto;
+            background: linear-gradient(135deg, #e0f7fa, #ffffff);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 1000px;
+        }
+
+        .section-heading {
+            text-align: center;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        /* About Me Section */
+        .about-me-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about-me-text {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .about-me-text h2 {
+            color: #007BFF;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .about-me-text p {
+            color: #333;
+        }
+
+        .about-me-image {
+            flex-basis: 30%;
+            text-align: center;
+        }
+
+        .about-me-image img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 50%;
+            border: 4px solid #007BFF;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Gallery Section */
+        .gallery-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .gallery-item {
+            flex: 1;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Video Section */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .video-frame iframe {
+            width: 100%;
+            max-width: 400px;
+            height: 225px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 10px;
+            color: #007BFF;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            max-width: 500px;
+            height: 150px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 10px;
+            border-top: 1px solid #555;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>About Me</h1>
+</header>
+    <nav>
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="achievements.html">My Achievements</a>
+            <a href="projects.html">My Projects</a>
+            <a href="organizations.html">My Organizations</a>
+            <a href="book.html">Books</a>
+            <a href="cv.html">My CV</a>
+            <a href="Zero.html">Zero Olympiad</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact Info</a>
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section class="section-container about-me-container">
+        
+    <!-- Personal Story -->
+    <section>
+        <h1>Personal Story</h1>
+        <h2>Early Life and Education</h2>
+        <p>Md. Jesan Anjum Turzo was born on <strong>December 5, 2007</strong>, in <em>Kishoreganj, Nilphamari</em>. Growing up in a family shaped by his father’s job transfers, Jesan’s educational journey took him across <strong>five different schools</strong>, each offering unique learning experiences. These schools include:</p>
+        <ul>
+            <li>Everest School</li>
+            <li>Shishu Kanon Shikkha Niketon</li>
+            <li>Magura Model School</li>
+            <li>Hazi Kasim Uddin Public School & College</li>
+            <li>Safiuddin Sarker Academy and College</li>
+        </ul>
+        <p>Currently, Jesan is pursuing his education in <strong>class 11</strong> at <em>BAF Shaheen College Kurmitola</em>. His dedication and hard work have been reflected in his academic achievements, earning <strong>GPA 5</strong> in both the <em>PSC</em> and <em>SSC</em> exams.</p>
+    </section>
+
+    <!-- Passion for Learning and Growth -->
+    <section>
+        <h2>Passion for Learning and Growth</h2>
+        <p>From an early age, Jesan demonstrated a deep passion for <strong>reading, writing</strong>, and <strong>public speaking</strong>. His ability to express ideas confidently has enabled him to speak on <strong>over 10 stages</strong>, where he inspired audiences and earned numerous academic awards.</p>
+        <p>Jesan also ventured into writing and authored a book titled <em>Read and Learn With Islam</em>. Although the book remains unpublished, it showcases his commitment to sharing knowledge and encouraging others to learn.</p>
+    </section>
+
+    <!-- Career Journey -->
+    <section>
+        <h1>Career Journey</h1>
+        <h2>Founding LCSSAC</h2>
+        <p>In <strong>2023</strong>, Jesan founded <strong>LCSSAC</strong> (Language Club of Safiuddin Sarker Academy & College), where he currently serves as the <strong>President</strong>. Under his leadership, the club focuses on helping students master the <em>English language</em>, nurturing leadership qualities, and developing future global influencers. His impactful contributions to LCSSAC reflect his strong vision and dedication.</p>
+
+        <h2>Collaborations and Contributions</h2>
+        <p>Beyond his literary and academic endeavors, Jesan has actively collaborated with several notable organizations, contributing to various educational and community development projects. These include:</p>
+        <ul>
+            <li>Mujib Olympiad</li>
+            <li>English Olympiad</li>
+            <li>Steam Olympiad</li>
+            <li>Ninish</li>
+            <li>BioPark</li>
+            <li>Interact Club</li>
+            <li>Dawateislami</li>
+            <li>Al-Madinatul Islam</li>
+            <li>Samakal Suridoy Somabesh</li>
+            <li>Gazipur Secchasebok Songghon</li>
+        </ul>
+        <p>His involvement with these platforms highlights his dedication to both <strong>personal growth</strong> and <strong>community service</strong>.</p>
+    </section>
+
+    <!-- Vision and Goals -->
+    <section>
+        <h1>Vision and Goals</h1>
+        <p>Jesan’s long-term mission is to <strong>teach English</strong> and empower students to communicate effectively on a global scale. Through his platform <strong>English Capsule</strong>, he envisions expanding its reach globally within the next <strong>8 years</strong>, transcending the boundaries of school-based clubs to create an international platform for learning and development.</p>
+        <p>His goals include:</p>
+        <ul>
+            <li>Helping students build confidence in <strong>English communication</strong></li>
+            <li>Organizing <em>workshops, events,</em> and <em>innovative learning sessions</em></li>
+            <li>Growing <strong>English Capsule</strong> into a globally recognized learning platform</li>
+        </ul>
+    </section>
+    </section class="section-container about-me-container">
+
+    <!-- Gallery Section -->
+    <section class="section-container">
+        <h2 class="section-heading">My Work Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="images/jesan.jpg" alt="Gallery Image 1">
+                <p>English Carnival Bangladesh</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/jesan.jpg" alt="Gallery Image 2">
+                <p>English Carnival Bangladesh</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="section-container">
+        <h2 class="section-heading">Watch My Videos</h2>
+        <div class="video-container">
+            <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/8WtysKBSBaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/yGCZvTxodMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    <div class="footer-content">
+
+        <!-- Facebook Page Live View -->
+        <div class="footer-section live-view">
+            <h3>Facebook Page</h3>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/mdjesan11/&tabs=timeline&width=500&height=150&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true"></iframe>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-section">
+            <h3>Contact Address</h3>
+            <div class="contact-info">
+                <i class="fa fa-map-marker"></i>
+                <p> Address:# Boro Dewra Road, Cherag Ali, Tongi, Gazipur - 1711, Bangladesh</p>
+            </div>
+            <div class="contact-info">
+                <i class="fa fa-phone"></i>
+                <p>+880 176011020, +880 1940410166</p>
+            </div>
+            <div class="contact-info">
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:hello.ec.bd@gmail.com">mdjesananjum@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/mdjesan11/"><img src="images/facebook.jpeg" alt="Facebook"></a>
+                <a href="https://youtube.com/@al-madina-tulislam8417?feature=shared"><img src="images/Youtube.png" alt="YouTube"></a>
+                <a href="https://x.com/jesananjum96156"><img src="images/x.png" alt="X"></a>
+                <a href="https://www.instagram.com/muhammadjesanturzo/"><img src="images/Instagram.jpeg" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/muhammad-jesan-anjum-bbb896279/"><img src="images/Linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+        <!-- Company Logo -->
+        <div class="footer-section company-logo">
+            <h3>Md. Jeans Anjum Turzo</h3>
+            <img src="images/Jesan.png" alt="Company Logo">
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Md. Jesan Anjum Turzo. All rights reserved.</p>
+    </div>
+    </footer>
+
+</body>
+</html>

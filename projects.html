@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Times, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: rgb(232,10,8);
+            background: linear-gradient(90deg, rgba(232,10,8,1) 0%, rgba(125,128,6,1) 51%, rgba(23,241,5,1) 100%);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+       }
+        nav {
+            background: rgb(63,94,251);
+            background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        /* Section Styling */
+        .content-section {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+        }
+
+        .content-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 5px solid #0073e6;
+        }
+
+        .text-box {
+            flex: 1;
+        }
+
+        .text-box h2 {
+            color: #0073e6;
+            font-size: 1.6em;
+            margin-bottom: 10px;
+        }
+
+        .text-box p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }}
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            font-size: 16px;
+            line-height: 1.8;
+            color: white;
+            text-decoration: none;
+        }
+        .footer-section a:hover {
+            color: #007BFF;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-info i {
+            color: #007BFF;
+            font-size: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .company-logo img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        .live-view iframe {
+            border: none;
+            width: 100%;
+            height: 150px;
+        }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>My Projects</h1>
+</header>
+    <nav>
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="achievements.html">My Achievements</a>
+            <a href="projects.html">My Projects</a>
+            <a href="organizations.html">My Organizations</a>
+            <a href="book.html">Books</a>
+            <a href="cv.html">My CV</a>
+            <a href="Zero.html">Zero Olympiad</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact Info</a>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section 1 -->
+        <div class="content-section">
+            <img src="images/sdg4.png" alt="Family Image 1">
+            <div class="text-box">
+            <h2>1. Digital, Creative, and Practical Education System</h2>
+            <h3>Objective:</h3>
+            <p>To modernize the education system by integrating digital tools, creativity, and hands-on practical learning to prepare students for the 21st-century job market.</p>
+        
+            <h3>Steps:</h3>
+            <ul>
+            <li>Introduce smart classrooms with multimedia tools and internet access.</li>
+            <li>Include project-based learning and encourage critical thinking.</li>
+            <li>Incorporate technical, vocational, and life skills training.</li>
+            <li>Train teachers on modern teaching strategies.</li>
+            <li>Update the curriculum to focus on STEAM education.</li>
+            </ul>
+
+            <h3>Impact:</h3>
+            <p>Builds a skilled and competitive workforce, reduces unemployment, and encourages innovation.</p>
+
+            <h3>Development Contribution:</h3>
+            <p>This project will prepare youth with modern skills, helping Bangladesh transform into a knowledge-based economy.</p>
+            </div>
+        </div class="content-section">
+
+        <!-- Section 2 -->
+        <div class="content-section">
+            <img src="images/sdg1.png" alt="School Memories">
+            <div class="text-box">
+                <h2>2. 10 Million Workplace for Unemployment</h2>
+            <h3>Objective:</h3>
+            <p>To create 10 million job opportunities for unemployed youth in diverse fields through skill training, entrepreneurship, and digital platforms.</p>
+        
+            <h3>Steps:</h3>
+            <ul>
+            <li>Set up skill development centers for vocational and digital training.</li>
+            <li>Launch a startup incubator to support young entrepreneurs.</li>
+            <li>Develop an online platform to connect skilled youth with global opportunities.</li>
+            <li>Partner with companies to create job placements.</li>
+            <li>Work with government initiatives to support employment creation.</li>
+            </ul>
+
+            <h3>Impact:</h3>
+            <p>Reduces unemployment, boosts national income, and empowers youth to become job creators.</p>
+
+            <h3>Development Contribution:</h3>
+            <p>This project will provide jobs and financial stability, contributing to economic growth and reducing poverty.</p>
+            </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="content-section">
+             <img src="images/islam.png" alt="Event Leadership">
+             <div class="text-box">
+             <h2>3. Islamic Education</h2>
+             <h3>Objective:</h3>
+             <p>To promote a balanced Islamic education system that combines religious teachings with modern education, fostering moral, ethical, and intellectual growth.</p>        
+             <h3>Steps:</h3>
+             <ul>
+             <li>Set up modern Islamic schools offering religious and modern subjects.</li>
+             <li>Develop online platforms and apps for accessible Islamic education.</li>
+             <li>Train teachers on modern teaching techniques.</li>
+             <li>Organize workshops focusing on character building and ethics.</li>
+             <li>Establish research centers for higher Islamic studies.</li>
+             </ul>
+
+             <h3>Impact:</h3>
+             <p>Nurtures ethical and morally strong individuals while promoting holistic development.</p>
+
+             <h3>Development Contribution:</h3>
+             <p>This project will create youth with strong moral values and intellectual abilities, fostering a peaceful and progressive society.</p>
+             </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="content-section">
+            <img src="images/space.jpg" alt="Public Speaking">
+            <div class="text-box">
+            <h2>4. Digital Transportation and Space Exploration</h2>
+            <h3>Objective:</h3>
+            <p>To modernize Bangladesh's transportation system and initiate the country's space exploration journey for national development.</p>
+        
+            <h3>Steps:</h3>
+            <ul>
+            <li>Introduce smart transportation systems like digital ticketing and electric vehicles.</li>
+            <li>Expand high-speed rail and metro systems.</li>
+            <li>Develop apps for efficient ridesharing and public transport tracking.</li>
+            <li>Establish a Bangladesh Space Research Center for training scientists.</li>
+            <li>Partner with international space agencies for knowledge-sharing.</li>
+            </ul>
+  
+            <h3>Impact:</h3>
+            <p>Improves connectivity, enhances productivity, and positions Bangladesh as a tech-driven country.</p>
+
+            <h3>Development Contribution:</h3>
+            <p>This project will create career opportunities in advanced technology and aerospace, helping Bangladesh compete on a global level.</p>
+            </div>
+        </div>
+    </main>    <footer>
+    <div class="footer-content">
+
+        <!-- Facebook Page Live View -->
+        <div class="footer-section live-view">
+            <h3>Facebook Page</h3>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/mdjesan11/&tabs=timeline&width=500&height=150&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true"></iframe>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-section">
+            <h3>Contact Address</h3>
+            <div class="contact-info">
+                <i class="fa fa-map-marker"></i>
+                <p> Address:# Boro Dewra Road, Cherag Ali, Tongi, Gazipur - 1711, Bangladesh</p>
+            </div>
+            <div class="contact-info">
+                <i class="fa fa-phone"></i>
+                <p>+880 176011020, +880 1940410166</p>
+            </div>
+            <div class="contact-info">
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:hello.ec.bd@gmail.com">mdjesananjum@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/mdjesan11/"><img src="images/facebook.jpeg" alt="Facebook"></a>
+                <a href="https://youtube.com/@al-madina-tulislam8417?feature=shared"><img src="images/Youtube.png" alt="YouTube"></a>
+                <a href="https://x.com/jesananjum96156"><img src="images/x.png" alt="X"></a>
+                <a href="https://www.instagram.com/muhammadjesanturzo/"><img src="images/Instagram.jpeg" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/muhammad-jesan-anjum-bbb896279/"><img src="images/Linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+        <!-- Company Logo -->
+        <div class="footer-section company-logo">
+            <h3>Md. Jeans Anjum Turzo</h3>
+            <img src="images/Jesan.png" alt="Company Logo">
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Md. Jesan Anjum Turzo. All rights reserved.</p>
+    </div>
+    </footer>
+</body>
+</html>
